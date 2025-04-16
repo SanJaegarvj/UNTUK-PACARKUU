@@ -1,0 +1,66 @@
+html<html lang="id"><head><meta charset="utf-8"/><title>untuk eva sayangku</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/><style>
+    body {
+      background-color: #fce4ec;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1, p {
+      color: #e91e63;
+    }
+    .heart {
+      font-size: 2em;
+      color: red;
+      animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      margin: 15px;
+      cursor: pointer;
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+    .next-btn {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .next-btn.step1 { font-size: 1.1em; }
+    .next-btn.step2 { font-size: 1.3em; }
+    .next-btn.step3 { font-size: 1.5em; }
+    #step2-1, #step2-2, #step2-3, #step3 {
+      display: none;
+    }
+  </style></head><body><div id="step1"><img alt="mian sayangku" src="40E6F4E2-2E8E-4ABF-AF98-36BF4F73CCD7.jpeg"/><h1>sayangku cintaku my honey bunny sweetie</h1><p>sayang, aku sadar banget aku salah kemarin. aku terlalu mikirin hal lain, sampai lupa buat jaga perasaan kamu.</p><p>aku bikin kamu kecewa, aku bikin kamu sedih, dan itu semua bukan hal yang layak kamu terima dari orang yang sayang sama kamu.</p><p>maafin aku ya... aku gak bermaksud nyakitin kamu. kadang aku emang gak peka, tapi bukan berarti aku gak peduli. justru kamu yang selalu aku pikirin.</p><p>aku janji bakal belajar jadi lebih baik, jadi versi yang lebih bisa jaga kamu, ngerti kamu, dan bikin kamu bahagia.</p><p>maafin aku ya, sayangku. aku sayang kamu, maafin aku ya sayangku cintaku my honey bunny sweetie cutie, i love u so much.</p><p class="heart">🤍</p><button onclick="showStep2()">dimaafin</button></div><div id="step2-1"><img alt="serius" src="52C663D7-011A-4E78-A055-D0C2F0C48BD6.jpeg"/><h1>beneran ya sayangku?</h1><button class="next-btn step1" onclick="showStep2_2()">iyaa sayangg</button></div><div id="step2-2"><img alt="serius lagi" src="52C663D7-011A-4E78-A055-D0C2F0C48BD6.jpeg"/><h1>yakin yaa sayangku?</h1><button class="next-btn step2" onclick="showStep2_3()">iyaa sayangg</button></div><div id="step2-3"><img alt="serius terakhir" src="52C663D7-011A-4E78-A055-D0C2F0C48BD6.jpeg"/><h1>aku percaya kamu bener-bener maafin aku ya?</h1><button class="next-btn step3" onclick="showStep3()">iyaa sayangg</button></div><div id="step3"><img alt="makasih ya" src="010A8FC0-753E-4D16-B4D4-BF7CC24E0E55.jpeg"/><h1>makasih banyak ya sayangku</h1><p>udah maafin aku, aku janji ga bakal kaya kemarin lagi.</p><p class="heart">🤍🤍️️</p></div><script>
+    function showStep2() {
+      document.getElementById("step1").style.display = "none";
+      document.getElementById("step2-1").style.display = "block";
+    }
+    function showStep2_2() {
+      document.getElementById("step2-1").style.display = "none";
+      document.getElementById("step2-2").style.display = "block";
+    }
+    function showStep2_3() {
+      document.getElementById("step2-2").style.display = "none";
+      document.getElementById("step2-3").style.display = "block";
+    }
+    function showStep3() {
+      document.getElementById("step2-3").style.display = "none";
+      document.getElementById("step3").style.display = "block";
+    }
+  </script></body></html>
